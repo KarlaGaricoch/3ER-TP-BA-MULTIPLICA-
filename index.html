@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de maquetado</title>
+    <meta name="author" content="karla">
+<meta name="keywords" content= "consulta, nutricion, formulario">
+<meta http-equiv="refresh" content="500">
+<meta http-equiv="cookie" content="user=karla">
+<style>
+    body{background-color: rgb(246, 211, 233);}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Home">Home</a>
+            <a href="Preferencias">Preferencias</a>
+            <a href="Audiovisules">Audiovisules</a>
+            <a href="Contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <h1>Formulario de consulta</h1>
+   <b style="background-color: rgb(246, 97, 199);" style="border: 1px solid black;"><i>Karla Garicoch</i></b>
+   <br>
+  <img src="assets/fotos/new-post.png" width="45px" > <a  href="mailto:belenkarla7@gmail.com">Envienos un mail</a> 
+   <img src="assets/fotos/phonelink-ring.png" width="45"> <a href="tel:1128692760">Llamenos</a>
+   <br>
+   <br>
+    <img src="assets/fotos/consulta.webp" width="400" height="250"/> 
+    <hr>
+   <h2><span style="color: brown;">Datos personales. </span></h2>
+   <p>Para realizar su consulta, completar los siguentes campos.<b>Aqui abajo</b></p>
+    <form action="envio.php" method="post" target="_blank">
+        <label for="Nombre y apellido">Ingrese su nombre y apellido.</label>
+        <input type="text" id="nombre y apellido" size="tamaño" name="nombre y apellido" placeholder="Ingrese sus datos">
+        <br>
+    <label for="edad">Ingrese su edad</label>
+    <input type="number" id="Edad" size="tamaño" name="Edad">
+    <br>
+    <label for="DNI">Ingrese su DNI</label>
+    <input type="text" id="DNI" size="tamaño" name="DNI" required>
+    <small>Este campo es obligatorio.</small>
+    <br>
+    <label for="numero">Telefono</label>
+    <input type="tel" id="numero" size="tamaño" name="numero" placeholder="1128692760" minlength="10" max="6">
+    <br>
+    <label for="e-mail">E-MAIL</label>
+    <input type="email" id="email" size="tamaño" name="e-mail">
+    <br>
+    <label for="Estado">Estado civil</label>
+    <select name="Estado" id="Estado">
+        <option value="Soltero">Soltero</option>
+        <option value="Casado">Casado</option>
+        <option value="Viudo">Viudo</option>
+    </select>
+    <br>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5qe6vzxYGmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+    <h3>Consulta</h3>
+    <p>La consulta tiene un valor de $7000, si usted cuenta con obra social, abajo le dejamos algunos datos a completar y la fecha y 
+        <br>
+        Muchas gracias!
+    </p>
+    <br>
+    <label for="Obra social">¿Cuenta con obra social?</label>
+    <br>
+    <input type="radio" name="obra social" value="Si"> Si
+    <br>
+    <input type="radio" name="obra social" value="No"> No
+    <br>
+    <br>
+    <label for="obra social option">Obras Sociales</label>
+    <select name="Obra social option" id="Os">
+        <optgroup label= "Provincial.">
+        <option value="Medicab">Medicab</option>
+        <option value="ACLISA">ACLISA</option>
+        <option value="SAMA">SAMA</option>
+    </optgroup>
+        <optgroup label="Nacionales">
+        <option value="OSPA">OSPA</option>
+        <option value="OSDE">OSDE</option>
+        <option value="OSPJN">OSPJN</option>
+    </optgroup>
+    <option value="Otra">Otra</option>
+    </select>
+    <br>
+    <br>
+    <label for="">Tengo otra O.S:</label>
+    <input type="text"id="Otra OS" name="otra O.S">
+    <br>
+    <br>
+    <label for="archivo">Ingrese una imagen de su carnet de afiliado</label>
+    <input type="file" id="archivo" size="tamaño" name="archivo" value="file">
+    <br>
+    <br>
+    <label for="numero de afiliado"> En caso de no tener a disposicion su carnet, puede ingresar su numero de afiliado.</label>
+    <input type="password" id="password" name="numero de afiliado" placeholder="Ingrese su numero de afiliado">
+    <br>
+    <label for="fecha">Dia de la consulta</label>
+    <input type="date" id="fecha" name="fecha" max="2023-12-18" min="2023-01-18">
+    <br>
+    <label for="Horario">Horario de la consulta</label>
+    <input type="time" id="time" name="horario">
+    <br>
+    <br>
+    <label for="opinion">¿Tiene alguna consulta antes de solicitar un turno?</label>
+    <textarea type="file" id="opinion" size="tamaño" name="opinion" placeholder="Ingrese aqui su duda." rows="5" cols="25"></textarea
+    <br>
+    <br>
+    <input type="submit" value="Enviar tu consulta.">
+    <br>
+    <br>
+    <input type="submit" value="Enviar los datos">
+    <br>
+    <input type="reset" value="Borrar todo">
+    <br>
+    <br>
+    <br>
+    <input type="button" onclick="alert ('Gracias por decidir cambiar tus habilitos!')" value="Agradecimiento">
+    </form>
+<p style="color: rgb(51, 0, 255);">Curiosidades: <strong>Por qué es importante cuidar tu alimentacion?</strong></p>
+
+
+
+<p><em>Cuidar nuestra alimentación es fundamental para la buena salud y el bienestar. Una alimentación sana nos ayuda a mantener un peso saludable y reducir el riesgo de padecer diabetes tipo 2, presión arterial alta, colesterol alto y el riesgo de desarrollar enfermedades cardiovasculares y algunos cánceres. Y recordar tomar agua, H<sub>2</sub>O diariamente.</em></p>
+<pre>
+    Comer es mucho más que alimentarnos. Es transmitir cultura, es un momento de encuentro, de fortalecimiento de vínculos y de transmisión de afecto
+
+</pre>
+<p><em>Un estilo de vida saludable está asociado a la realización de un conjunto de comportamientos y actitudes habituales que contribuyen al bienestar de las personas. Promover hábitos saludables es fomentar la salud y mejorar la calidad de vida.</em></p>
+<video src="assets/videos/y2mate.com - Ministerio de Salud Pública Alimentación saludable_480p.mp4" controls poster="assets/fotos/salud.png"></video>
+<p Tu navegador no pudo reproducir este video.><a href="assets/videos/y2mate.com - Ministerio de Salud Pública Alimentación saludable_480p.mp4"></a></p>
+
+<p><q>Que tu medicina sea tu alimento, Hipócrates</q></p>
+<br>
+<a href="https://buenosaires.gob.ar" target="blank">Haz click para más informacion.</a>
+<hr>
+<p>Nos podes encontrar en:</p>
+<br>
+<iframe src="https://www.google.com/maps/d/embed?mid=16CUpQWOPI4-KGI9M44p-gDTvsR0&hl=es_419&ehbc=2E312F" width="640" height="480"></iframe>
+<p> Tambien nos podes encontrar en Alberti, a 10 <abbr title="km">Km</abbr> de la ruta 81</p>
+</body>
+</html>
